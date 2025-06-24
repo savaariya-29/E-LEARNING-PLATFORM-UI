@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero, .courses, .course-detail, .progress-tracking, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.course-card {
+    background-color: white;
+    margin: 20px auto;
+    padding: 50px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    border-radius: 20px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-card, .progress-bar {
+        width: 95%;
+    }
+
+    form input, form textarea {
+        width: 95%;
+    }
+}

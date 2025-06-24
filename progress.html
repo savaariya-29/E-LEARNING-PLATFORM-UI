@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>E-Learning Platform</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="progress-tracking">
+    <h2>Your Progress</h2>
+
+    <div class="course-progress">
+        <h3>Python for Beginners</h3>
+        <div class="progress-bar">
+            <div class="progress" id="python-progress" style="width: 60%;">60%</div>
+        </div>
+        <button onclick="updateProgress('python-progress')">Mark as Complete</button>
+    </div>
+
+    <div class="course-progress">
+        <h3>Data Visualization</h3>
+        <div class="progress-bar">
+            <div class="progress" id="data-viz-progress" style="width: 40%;">40%</div>
+        </div>
+        <button onclick="updateProgress('data-viz-progress')">Mark as Complete</button>
+    </div>
+
+    <div class="course-progress">
+        <h3>SQL Essentials</h3>
+        <div class="progress-bar">
+            <div class="progress" id="sql-progress" style="width: 20%;">20%</div>
+        </div>
+        <button onclick="updateProgress('sql-progress')">Mark as Complete</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 E-Learning Platform. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
